@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guest List</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&family=Hind:wght@300;400&family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Potluck Guest List
+        </h1>
+
+        <h3>
+          <i class="fa fa-envelope" aria-hidden="true"></i> Invite 8 people! :)
+        </h3>
+      </header>
+      <div class="add-guest">
+        <div class="alert hide">
+          <h3>Guest list is full!</h3>
+          <button class="assign"><a href="#assigned">Assign dishes!</a></button>
+        </div>
+        <label for="invite">Add Guest</label>
+        <input type="text" id="invite" />
+        <button class="invite">Invite</button>
+      </div>
+      <div class="guest-list-container">
+        <ul class="guest-list"></ul>
+        <p class="attendees">Attending: <span class="attendance">0</span></p>
+      </div>
+      <div id="assigned" class="items-list-container">
+        <ul class="assigned-items"></ul>
+      </div>
+      <footer class="hide">
+        <h3>See you on Saturday!</h3>
+      </footer>
+    </div>
+  </body>
+</html>
